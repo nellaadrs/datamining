@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tugas 9 - Best Accuracy Between Normalization vs Unnomarlization" href="Tugas9.html" />
+    <link rel="prev" title="UTS PENAMBANGAN DATA B" href="UTS.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,7 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
   Tugas
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas1.html">
    Tugas 1 - Dissimilarity
@@ -149,9 +151,19 @@ const thebe_selector_output = ".output, .cell_output"
    </strong>
   </a>
  </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tugas 8 -  Implementasi Naive Bayes Studi Kasus Peminjaman Uang
+  </a>
+ </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Tugas7.html">
+  <a class="reference internal" href="Tugas9.html">
    Tugas 9 - Best Accuracy Between Normalization vs Unnomarlization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas12.html">
+   Ensamble Stacking (Tugas 12)
   </a>
  </li>
  <li class="toctree-l1">
@@ -519,7 +531,7 @@ a. Gaussian Naive Baiyes</p></li>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6ff55f4f-fe0c-4211-988a-be8a02673927">
+  <div id="df-9aa51137-08d1-4090-9a3b-b5a8600856e1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -608,7 +620,7 @@ a. Gaussian Naive Baiyes</p></li>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6ff55f4f-fe0c-4211-988a-be8a02673927')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9aa51137-08d1-4090-9a3b-b5a8600856e1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -659,12 +671,12 @@ a. Gaussian Naive Baiyes</p></li>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6ff55f4f-fe0c-4211-988a-be8a02673927 button.colab-df-convert');
+          document.querySelector('#df-9aa51137-08d1-4090-9a3b-b5a8600856e1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6ff55f4f-fe0c-4211-988a-be8a02673927');
+          const element = document.querySelector('#df-9aa51137-08d1-4090-9a3b-b5a8600856e1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -741,7 +753,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f053ba04-1453-44fd-b84b-6b7c7729d1de">
+  <div id="df-1d0af6c8-6713-45f6-8f47-cbd77111c41b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -824,7 +836,7 @@ Name: risk_rating, Length: 900, dtype: int64
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f053ba04-1453-44fd-b84b-6b7c7729d1de')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1d0af6c8-6713-45f6-8f47-cbd77111c41b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -875,12 +887,12 @@ Name: risk_rating, Length: 900, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f053ba04-1453-44fd-b84b-6b7c7729d1de button.colab-df-convert');
+          document.querySelector('#df-1d0af6c8-6713-45f6-8f47-cbd77111c41b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f053ba04-1453-44fd-b84b-6b7c7729d1de');
+          const element = document.querySelector('#df-1d0af6c8-6713-45f6-8f47-cbd77111c41b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -943,7 +955,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0c971d8b-d945-480c-838e-0e3c6b062e67">
+  <div id="df-690713c1-aa00-4a01-a50e-f9bc00e79e56">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1147,7 +1159,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </table>
 <p>900 rows × 12 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0c971d8b-d945-480c-838e-0e3c6b062e67')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-690713c1-aa00-4a01-a50e-f9bc00e79e56')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1198,12 +1210,12 @@ Name: risk_rating, Length: 900, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0c971d8b-d945-480c-838e-0e3c6b062e67 button.colab-df-convert');
+          document.querySelector('#df-690713c1-aa00-4a01-a50e-f9bc00e79e56 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0c971d8b-d945-480c-838e-0e3c6b062e67');
+          const element = document.querySelector('#df-690713c1-aa00-4a01-a50e-f9bc00e79e56');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1260,7 +1272,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f171c95f-dd21-4937-89fd-26e868fd97a1">
+  <div id="df-826a16f2-fddb-473d-9875-51e116c0ef5d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1356,7 +1368,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </table>
 <p>900 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f171c95f-dd21-4937-89fd-26e868fd97a1')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-826a16f2-fddb-473d-9875-51e116c0ef5d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1407,12 +1419,12 @@ Name: risk_rating, Length: 900, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f171c95f-dd21-4937-89fd-26e868fd97a1 button.colab-df-convert');
+          document.querySelector('#df-826a16f2-fddb-473d-9875-51e116c0ef5d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f171c95f-dd21-4937-89fd-26e868fd97a1');
+          const element = document.querySelector('#df-826a16f2-fddb-473d-9875-51e116c0ef5d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1474,7 +1486,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1d569954-ae4e-4a70-90ae-ad8f8f55b8d9">
+  <div id="df-303304af-766f-4b47-a328-9d7450455e62">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1570,7 +1582,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </table>
 <p>900 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1d569954-ae4e-4a70-90ae-ad8f8f55b8d9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-303304af-766f-4b47-a328-9d7450455e62')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1621,12 +1633,12 @@ Name: risk_rating, Length: 900, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1d569954-ae4e-4a70-90ae-ad8f8f55b8d9 button.colab-df-convert');
+          document.querySelector('#df-303304af-766f-4b47-a328-9d7450455e62 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1d569954-ae4e-4a70-90ae-ad8f8f55b8d9');
+          const element = document.querySelector('#df-303304af-766f-4b47-a328-9d7450455e62');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1676,7 +1688,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-265af407-4979-4d3c-bf4d-7c43e5c95081">
+  <div id="df-0357905d-25f7-41bc-8907-8868a6a179a6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1892,7 +1904,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </table>
 <p>900 rows × 13 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-265af407-4979-4d3c-bf4d-7c43e5c95081')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0357905d-25f7-41bc-8907-8868a6a179a6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1943,12 +1955,12 @@ Name: risk_rating, Length: 900, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-265af407-4979-4d3c-bf4d-7c43e5c95081 button.colab-df-convert');
+          document.querySelector('#df-0357905d-25f7-41bc-8907-8868a6a179a6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-265af407-4979-4d3c-bf4d-7c43e5c95081');
+          const element = document.querySelector('#df-0357905d-25f7-41bc-8907-8868a6a179a6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2005,7 +2017,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-165299fd-cf5e-45ad-852e-6ff63e5fb9e4">
+  <div id="df-019bef4d-9c94-400e-b9c9-f004aafb421a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2197,7 +2209,7 @@ Name: risk_rating, Length: 900, dtype: int64
 </table>
 <p>900 rows × 11 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-165299fd-cf5e-45ad-852e-6ff63e5fb9e4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-019bef4d-9c94-400e-b9c9-f004aafb421a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2248,12 +2260,12 @@ Name: risk_rating, Length: 900, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-165299fd-cf5e-45ad-852e-6ff63e5fb9e4 button.colab-df-convert');
+          document.querySelector('#df-019bef4d-9c94-400e-b9c9-f004aafb421a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-165299fd-cf5e-45ad-852e-6ff63e5fb9e4');
+          const element = document.querySelector('#df-019bef4d-9c94-400e-b9c9-f004aafb421a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2702,6 +2714,20 @@ The recall of this model is 100.0 %.
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="UTS.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><strong>UTS PENAMBANGAN DATA B</strong></p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Tugas9.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tugas 9 - Best Accuracy Between Normalization vs Unnomarlization</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
