@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tugas 7 - Best Accuracy Between Normalization vs Unnomarlization" href="Tugas7.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -414,8 +415,21 @@ title="Print to PDF"
                 
   <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Modul Library</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+
+<span class="c1">#Modul library Metode </span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+
+<span class="c1"># #modul library data testing dan training</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1"># #modul library score tingkat akurasi</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 </pre></div>
 </div>
 </div>
@@ -430,7 +444,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-80105a6f-83fa-4369-a433-6fc20be6c82b">
+  <div id="df-34f8521f-8a8a-44cf-8b1c-998234f8a334">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -562,7 +576,7 @@ title="Print to PDF"
 </table>
 <p>1421 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-80105a6f-83fa-4369-a433-6fc20be6c82b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-34f8521f-8a8a-44cf-8b1c-998234f8a334')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -613,12 +627,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-80105a6f-83fa-4369-a433-6fc20be6c82b button.colab-df-convert');
+          document.querySelector('#df-34f8521f-8a8a-44cf-8b1c-998234f8a334 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-80105a6f-83fa-4369-a433-6fc20be6c82b');
+          const element = document.querySelector('#df-34f8521f-8a8a-44cf-8b1c-998234f8a334');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -673,7 +687,7 @@ memory usage: 66.7 KB
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#fitur</span>
-<span class="n">X</span><span class="o">=</span><span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">X</span><span class="o">=</span><span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
 
 <span class="c1">#hasil</span>
 <span class="n">Y</span><span class="o">=</span><span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">5</span><span class="p">]</span>
@@ -725,7 +739,7 @@ memory usage: 66.7 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Acuracy KNN =  0.9824561403508771
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Acuracy KNN =  0.9368421052631579
 </pre></div>
 </div>
 </div>
@@ -778,6 +792,13 @@ memory usage: 66.7 KB
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Tugas7.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Tugas 7 - Best Accuracy Between Normalization vs Unnomarlization</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>
